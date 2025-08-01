@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    .main{
+        background-color: white;
+        height: 100vh;
+        background-size: cover;
+        position: relative;
+        padding: 20px;
+        
+    }
+    .a{
+        text-align: left;
+        margin: 0 auto;
+
+    }
+    .b,.b-img{
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+    }
+    .b{
+        background-image: url(coffee.jpeg);
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        top: 150px;
+        right: 150px;
+        z-index: 3;
+    }
+    .b-img{
+        background-image: url(cofffff.jpeg);
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        top: 50px;
+        right: 250px;
+    }
+    .cc{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f1e6db;
+        border-radius: 50px;
+        padding: 30px 0;
+        position: absolute;
+        top: 350px;
+        left: 350px;
+        height: 50px;
+        right: 350px;
+    }
+    .c{
+        text-align: center;
+        margin: 0 40px;
+    }
+    .c h2{
+        margin: 0;
+    }
+    .c p{
+        font-size: small;
+        margin: 5px 0 0;
+        color: #666;
+    }
+    .features{
+        /* display: flex;
+        justify-content: center;
+        flex-wrap: wrap; */
+        background: rgb(69, 62, 62);
+        padding: 70px 20px;
+        width: 100%;
+    }
+    .featuresss{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        gap: 10px;
+    }
+    .box{
+        color: white;
+        font-size: small;
+        width: 100%;
+        max-width: 200px;
+        height: 300px;
+        padding: 30px;
+        border-radius: 50px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .box img{
+        max-width: 100%;
+        height: 200px;
+        gap: 5px;
+        border-radius: 10px;
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="a" style="margin-left: 80px;"><br><br>
+            <h1>Your coffee<br>Your vibe<br>Your energy</h1>
+            <!-- <h1>Your vibe</h1>
+            <h1>Your energy</h1><br> -->
+            <p style="color: rgb(123, 123, 147);" style="font-family:'Times New Roman', Times, serif">Coffee is a popular beverage made from roasted coffee beans, which are the seeds of the Coffee plant.<br> It's known for its stimulating effect, primarily due to the caffeine it contains.<br>Coffee is enjoyed worldwide and is a significant international commodity.<br></p>
+            <input type="button"value="Explore" style="background-color: rgb(146, 57, 57);color: white;padding: 10px;border: none;border-radius: 20px;"><br><br><br><br><br><br>
+        </div>
+        <div class="b"></div>
+        <div class="b-img"></div>
+        <section class="cc">
+        <div class="c">
+        <img src="coffee-cup (1).png"alt="icon">
+            <h2>190+</h2>
+            <p>Lorem ipsum dolor<br>sit amet,consectetur</p>
+        </div>
+        <div class="c">
+            <img src="coffee-cup (1).png"alt="icon">
+            <h2>123k</h2>
+            <p>Lorem ipsum dolor<br>sit amet,consectetur</p>
+        </div>
+        <div class="c">
+            <img src="coffee-cup (1).png"alt="icon">
+            <h2>58</h2>
+            <p>Lorem ipsum dolor<br>sit amet,consectetur</p>
+        </div>
+        </section>
+        <div class="features">
+            <div class="container featuresss">
+                <div class="box">
+                    <img src="coff.jpeg" alt="coff">
+                    <p>Et integer facilisi eget</p>
+                </div>
+                <div class="box">
+                    <img src="ccccc.jpeg" alt="ccccc">
+                    <p>Et integer facilisi eget</p>
+                </div>
+                <div class="box">
+                    <img src="images (6).jpeg" alt="images">
+                    <p>Et integer facilisi eget</p>
+                </div>
+                <div class="box">
+                    <img src="COFFFFFFFFF.jpeg" alt="COFFFFFFFFF">
+                    <p>Et integer facilisi eget</p>
+                </div>
+                <div class="box">
+                    <img src="coooola.jpg" alt="coooola">
+                    <p>Et integer facilisi eget</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
