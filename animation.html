@@ -4,20 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
     <style>
-        img{
-        width:100px;
-        height: 100px;
-        background: rgb(131, 131, 221);
-        transition: width 2s,height 2s,
-     transform 2s;
-    }
-    img:hover{
-        width: 300px;
-        height: 300px;
-        
-    }
+        img
+        {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation-name:img;
+            animation-duration: 2s;
+        }
+        @keyframes  img{
+        0%  {background-color: red; left: 0px;top: 0px;}
+        25%  {background-color: yellow; left: 200px;top: 0px;}
+        50% {background-color: blue; left: 200px;top: 200px;}
+        75% {background-color: grey; left: 200px;top: 0px;}
+        100%  {background-color: red; left: 0px;top: 0px;}
+        }
+        img {
+      width: 100px;
+      height: 100px;
+      background: red;
+      transition: width 2s, height 2s, transform 2s;
+}
+
+img:hover {
+  width: 300px;
+  height: 300px;
+  transform: rotate(180deg);
+}
         body{
             margin: 0;
             padding: 0;
@@ -48,14 +65,14 @@
        
        } */
        img {
-        border-radius: 4000px;
+        border-radius: 400px;
         position: absolute;
         top: 50px;
         right: 250px;
         width: 100px;
         height: 100px;
         background: rgb(131, 131, 221);
-        transition: width 2s, height 2s, transform 2s;
+       transition: width 2s, height 2s, transform 2s;
        }
 
        img:hover {
@@ -108,5 +125,5 @@
     <input type="button" value="BOOK A TABLE" style="background-color: orange; color: rgb(245, 246, 247);bordere-radius:5px; border: none;"> 
         </div>
         </div>
-</body>
+  </body>
 </html>
